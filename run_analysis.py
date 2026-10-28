@@ -73,9 +73,9 @@ def main():
                    "模型診斷：`"+json.dumps(summary["diagnostics"],ensure_ascii=False)+"`", "",
                    "圖表：`"+slug+"/prediction_interval.html`；完整結果：`"+slug+"/predictions.csv`。", "",
                    "95% PI 描述個別新觀測的不確定性，CI 描述平均反應的不確定性。這些是條件於已選模型的傳統 OLS 區間，未納入特徵選擇不確定性。JB/BP 與殘差圖用於檢查假設，違反假設時名目覆蓋率可能不成立。", "",
-                   "### Deployment", "", "以 Streamlit 提供資料預覽、特徵選擇、模型比較、圖表、新樣本及批次預測，並可下載結果。網頁實際部署網址須以成功部署後的網址為準。", ""]
+                   "### Deployment", "", "公開網站：https://hw2-regression-lab-aghoniln.freshplum4098.chatgpt.site/ 。網站提供兩種題目、資料預覽、特徵與模型比較、圖表、新樣本及批次預測。GitHub：https://github.com/aghoniln/AIOT_HW2 ，附可重現實驗的 Python / Streamlit 程式。", ""]
     report += ["## 結論與限制", "", "特徵較少不保證比較好，應以訓練交叉驗證決定；測試集只負責最後評估。洪水資料是合成資料，表現不能外推到真實災害；汽車樣本僅 205 筆，且部分特徵共線、類別稀少。模型係數為關聯而非因果，外插時誤差可能增加。", "",
-               (ROOT / "reports/AI_DISCLOSURE.md").read_text(), "", (ROOT / "reports/NOTEBOOKLM_GUIDE.md").read_text()]
+               (ROOT / "reports/AI_DISCLOSURE.md").read_text(encoding="utf-8"), "", (ROOT / "reports/NOTEBOOKLM_SUMMARY.md").read_text(encoding="utf-8")]
     (ROOT / "reports/RESULTS.md").write_text("\n".join(report), encoding="utf-8")
     (ROOT / "reports/all_results.json").write_text(json.dumps(summaries,ensure_ascii=False,indent=2),encoding="utf-8")
     env = {"python": platform.python_version()}

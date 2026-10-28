@@ -48,7 +48,8 @@ def main(destination):
         (dest/'data'/f'{slug}.json').write_text(json.dumps(clean_json(payload),ensure_ascii=False),encoding='utf-8')
         shutil.copyfile(ROOT/'data'/meta['file'],dest/'data'/f'{slug}.csv')
         r['predictions'].to_csv(dest/'data'/f'{slug}_predictions.csv',index=False,encoding='utf-8-sig')
-    shutil.copyfile(ROOT/'reports/RESULTS.md',dest/'data/RESULTS.md')
+    for report_name in ['RESULTS.md', 'NOTEBOOKLM_SUMMARY.md', 'SUBMISSION_CHECKLIST.md']:
+        shutil.copyfile(ROOT/'reports'/report_name, dest/'data'/report_name)
 
 
 if __name__=='__main__':

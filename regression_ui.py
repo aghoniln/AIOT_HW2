@@ -277,6 +277,6 @@ def render():
         for title, body in stages:
             st.subheader(title); st.write(body)
     with ai_tab:
-        st.markdown((ROOT / "reports" / "AI_DISCLOSURE.md").read_text())
-        st.markdown((ROOT / "reports" / "NOTEBOOKLM_GUIDE.md").read_text())
+        st.markdown((ROOT / "reports" / "AI_DISCLOSURE.md").read_text(encoding="utf-8"))
+        st.markdown((ROOT / "reports" / "NOTEBOOKLM_SUMMARY.md").read_text(encoding="utf-8"))
         st.markdown("**繳交清單**：GitHub 網址、可操作網頁網址、來源與欄位說明、模型比較、含區間的預測圖、CRISP-DM 六階段；另保留對話 PDF 與實際 NotebookLM 摘要。")

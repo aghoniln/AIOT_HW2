@@ -20,7 +20,7 @@ py -3.12 -m venv .venv
 
 瀏覽器開啟終端機顯示的本機網址。左側選擇題目，再按「開始分析與訓練」。若 Python 版本不同，把 `py -3.12` 改為已安裝的版本。
 
-ZIP 內已附 CSV；GitHub 版本可在首次啟動時自動下載，也可以先執行：
+儲存庫已附 CSV；缺少資料時可在首次啟動時自動下載，也可以先執行：
 
 ```powershell
 .\.venv\Scripts\python.exe setup_data.py
@@ -36,7 +36,7 @@ ZIP 內已附 CSV；GitHub 版本可在首次啟動時自動下載，也可以�
 | 洪水機率 | https://www.kaggle.com/datasets/naiyakhalid/flood-prediction-dataset | 壓縮檔 train.csv，固定種子 42 抽 50,000 筆 | 20（不含 id） | FloodProbability |
 | 汽車價格 | https://www.kaggle.com/datasets/hellbuoy/car-price-prediction | CarPrice_Assignment.csv，205 筆 | 23（不含 car_ID、CarName） | price |
 
-原始資料集授權與使用規定以 Kaggle 來源頁為準。汽車資料字典附於 ZIP 的 `data/car_data_dictionary.xlsx`。模型使用的是原始欄位數；One-hot 編碼後欄數另外呈現。不能把 ID、目標或編碼後欄數當成原始特徵數。
+原始資料集授權與使用規定以 Kaggle 來源頁為準。汽車資料字典位於 `data/car_data_dictionary.xlsx`。模型使用的是原始欄位數；One-hot 編碼後欄數另外呈現。不能把 ID、目標或編碼後欄數當成原始特徵數。
 
 洪水上游 train.csv 為 1,117,957 筆，取樣只為降低互動運算成本。`data/flood_sampling.json` 記錄方法與 SHA-256。沒有使用同壓縮檔的 flood.csv：該檔的目標可幾乎精確由輸入加總推得，不適合拿滿分表現展示一般化能力。
 
@@ -83,7 +83,7 @@ python -m streamlit run app.py
 
 ## HW1 延伸
 
-ZIP 中 `hw1/` 保留原氣象專案，可由左側切換。原程式寫死的 API 金鑰已在副本移除，改由 `CWA_API_KEY` 環境變數提供；沒有金鑰不影響 HW2。原上傳檔案未被覆寫。
+`hw1/` 保留原氣象專案，可由左側切換。原程式寫死的 API 金鑰已在副本移除，改由 `CWA_API_KEY` 環境變數提供；沒有金鑰不影響 HW2。原上傳檔案未被覆寫。
 
 本儲存庫附有 hw1/，可切換原氣象頁面；HW2 分析模組不依賴 CWA API。
 
@@ -96,12 +96,13 @@ ZIP 中 `hw1/` 保留原氣象專案，可由左側切換。原程式寫死的 A
 
 檢查保留測試集、測試標籤不影響特徵選擇、區間順序、新資料格式、未知類別、無效網址與時間切分。兩個 Kaggle 題目另有實際訓練與 Streamlit AppTest 驗證。
 
-## AI 與尚需人工完成的學習證據
+## AI 與學習證據
 
 - GPT 輔助揭露：`reports/AI_DISCLOSURE.md`。
-- NotebookLM：依 `reports/NOTEBOOKLM_GUIDE.md` 實際研究，補入至少 100 字摘要及來源；目前不冒充已完成。
-- 完整相關 ChatGPT 對話需由使用者匯出 PDF；此 ZIP 不含帳號內完整對話匯出。
-- 實驗報告：`reports/RESULTS.md`，由實際訓練產生。
+- NotebookLM 已完成實際研究：[`reports/NOTEBOOKLM_SUMMARY.md`](reports/NOTEBOOKLM_SUMMARY.md)，含超過 100 字摘要、兩份 Kaggle 解題與三份官方文件、引註對照及查核。
+- 完整相關 ChatGPT 對話 PDF 尚待帳號持有人匯出；目前可用瀏覽器未登入 ChatGPT，無法讀取完整歷史對話。AI 使用揭露不等於完整對話。
+- 實驗報告：[`reports/RESULTS.md`](reports/RESULTS.md)，模型指標由實際訓練產生。
+- 作業要求與成果對照：[`reports/SUBMISSION_CHECKLIST.md`](reports/SUBMISSION_CHECKLIST.md)，附展示順序與尚待補件項目。
 
 ## 官方方法參考
 
