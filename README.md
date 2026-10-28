@@ -4,7 +4,7 @@
 
 ## 已發布線上版
 
-https://hw2-regression-lab-aghoniln.freshplum4098.chatgpt.site
+https://hw2-regression-lab-aghoniln.fhjhegoa.chatgpt.site
 
 目前為公開網站，任何人取得網址即可瀏覽，不需要登入 ChatGPT，可直接提供給老師。此伴隨版內建題目顯示實際 Python 實驗，自訂 CSV 則以瀏覽器重新訓練。
 
@@ -79,7 +79,7 @@ python -m streamlit run app.py
 
 若另外部署 Streamlit Community Cloud，設定 Repository 為 `aghoniln/AIOT_HW2`、Branch 為 `main`、Main file path 為 `app.py`，Python 3.12。已附 CSV，正常啟動不需重新下載。
 
-公開免登入的瀏覽器版本：[HW2 線上網站](https://hw2-regression-lab-aghoniln.freshplum4098.chatgpt.site/)。原始碼位於 `web/`；可於該目錄執行 `python -m http.server 8000` 後開啟本機網址。
+公開免登入的瀏覽器版本：[HW2 線上網站](https://hw2-regression-lab-aghoniln.fhjhegoa.chatgpt.site/)。原始碼位於 `web/`；可於該目錄執行 `python -m http.server 8000` 後開啟本機網址。
 
 ## HW1 延伸
 

@@ -1,6 +1,6 @@
 HW2 多元線性回歸
 
-1. 線上版：https://hw2-regression-lab-aghoniln.freshplum4098.chatgpt.site
+1. 線上版：https://hw2-regression-lab-aghoniln.fhjhegoa.chatgpt.site
    已公開，無需登入 ChatGPT，可直接提供給老師。
 
 2. Windows 本機：在本資料夾開啟 PowerShell，執行

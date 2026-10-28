@@ -5,7 +5,7 @@
 ## 主要繳交連結
 
 - GitHub：https://github.com/aghoniln/AIOT_HW2
-- 公開網站：https://hw2-regression-lab-aghoniln.freshplum4098.chatgpt.site/
+- 公開網站：https://hw2-regression-lab-aghoniln.fhjhegoa.chatgpt.site/
 - 實驗報告：[RESULTS.md](RESULTS.md)
 
 ## 要求與成果

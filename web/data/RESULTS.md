@@ -52,7 +52,7 @@ RFE 保留：TopographyDrainage、RiverManagement、Deforestation、Urbanization
 
 ### Deployment
 
-公開網站：https://hw2-regression-lab-aghoniln.freshplum4098.chatgpt.site/ 。網站提供兩種題目、資料預覽、特徵與模型比較、圖表、新樣本及批次預測。GitHub：https://github.com/aghoniln/AIOT_HW2 ，附可重現實驗的 Python / Streamlit 程式。
+公開網站：https://hw2-regression-lab-aghoniln.fhjhegoa.chatgpt.site/ 。網站提供兩種題目、資料預覽、特徵與模型比較、圖表、新樣本及批次預測。GitHub：https://github.com/aghoniln/AIOT_HW2 ，附可重現實驗的 Python / Streamlit 程式。
 
 ## 汽車價格預測
 
@@ -105,7 +105,7 @@ RFE 保留：symboling、fueltype、aspiration、doornumber、carbody、drivewhe
 
 ### Deployment
 
-公開網站：https://hw2-regression-lab-aghoniln.freshplum4098.chatgpt.site/ 。網站提供兩種題目、資料預覽、特徵與模型比較、圖表、新樣本及批次預測。GitHub：https://github.com/aghoniln/AIOT_HW2 ，附可重現實驗的 Python / Streamlit 程式。
+公開網站：https://hw2-regression-lab-aghoniln.fhjhegoa.chatgpt.site/ 。網站提供兩種題目、資料預覽、特徵與模型比較、圖表、新樣本及批次預測。GitHub：https://github.com/aghoniln/AIOT_HW2 ，附可重現實驗的 Python / Streamlit 程式。
 
 ## 結論與限制
 
